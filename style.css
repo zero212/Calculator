@@ -3,13 +3,14 @@
     border: 1px solid green;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 8px 8px;
     grid-template-areas:
         "button1 button2 button3"
         "button4 button5 button6"
         "button7 button8 button9"
-        ". button0 .";
+        ". button0 ."
+        ". . .";
         justify-content: center;
         align-items: center;
         place-items: center;
@@ -35,9 +36,18 @@
     grid-area: button0;
 }
 
+.button-oprt {
+    color: blue;
+}
+
 .button:hover {
     background-color: tomato;
     color: white;
+}
+
+.button-oprt:hover {
+    background-color: cadetblue;
+    color:white;
 }
 
 .button:active {
@@ -45,7 +55,12 @@
     color: white;
 }
 
-input.value {
+.button-oprt:active {
+    background-color: rgb(52, 104, 155);
+    color:white;
+}
+
+input.result {
     width: 215px;
     height: 30px;
     margin-bottom: 8px;
