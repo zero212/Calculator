@@ -17,7 +17,9 @@
         width: 220px;
 }
 
-.button {
+.button,
+.equal-button,
+.button-oprt {
     color: red;
     height: 40px;
     display: inline-block;
@@ -36,7 +38,8 @@
     grid-area: button0;
 }
 
-.button-oprt {
+.button-oprt,
+.equal-button {
     color: blue;
 }
 
@@ -45,7 +48,8 @@
     color: white;
 }
 
-.button-oprt:hover {
+.button-oprt:hover,
+.equal-button:hover {
     background-color: cadetblue;
     color:white;
 }
@@ -55,7 +59,8 @@
     color: white;
 }
 
-.button-oprt:active {
+.button-oprt:active,
+.equal-button:active {
     background-color: rgb(52, 104, 155);
     color:white;
 }
